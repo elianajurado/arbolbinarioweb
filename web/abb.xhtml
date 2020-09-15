@@ -19,6 +19,22 @@
             </p:panel>
         </h:form>
         <h:form>
+            <p:panel header="Eliminar nivel">
+                <p:outputLabel value="Ingresa el nivel a eliminar"/>
+                <p:inputText required="true" value="#{arbolBinarioControlador.datoNivel}"/>
+                <p:commandButton ajax="false"  value="Eliminar" action="#{arbolBinarioControlador.eliminarNivel()}"
+                                 update="@all" />
+            </p:panel>
+        </h:form>
+        <h:form>
+            <p:panel header="Multipicar arbol">
+                <p:outputLabel value="Ingresa número a multiplicar "/>
+                <p:inputText required="true" value="#{arbolBinarioControlador.dato}"/>
+                <p:commandButton ajax="false"  value="Eliminar" action=""
+                                 update="@all" />
+            </p:panel>
+        </h:form>
+        <h:form>
             <p:panel header="Orden">
                 <p:commandButton value="InOrden" action="#{arbolBinarioControlador.habilitarInOrden()}" update="@all" ajax="false"/>
                 <p:commandButton value="PreOrden" action="#{arbolBinarioControlador.habilitarPreOrden()}" update="@all" ajax="false"/>

@@ -36,12 +36,21 @@ public class ArbolBinarioControlador implements Serializable {
 
     private ArbolBinario arbol = new ArbolBinario();
     private int dato;
+    private int datoNivel;
     private boolean verInOrden = false;
     private boolean verPreOrden = false;
     private boolean verPosOrden = false;
     private boolean verPorNiveles = false;
     private boolean verPorNivelesOrden = false;
     private boolean verHojas = false;
+
+    public int getDatoNivel() {
+        return datoNivel;
+    }
+
+    public void setDatoNivel(int datoNivel) {
+        this.datoNivel = datoNivel;
+    }
 
     public boolean isVerPorNivelesOrden() {
         return verPorNivelesOrden;
